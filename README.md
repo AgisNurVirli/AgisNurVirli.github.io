@@ -1,1 +1,0 @@
-# AgisNurVirli.github.io
