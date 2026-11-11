@@ -1,149 +1,242 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sweet Crumbs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Agis</title>
 
-<style>
-*{box-sizing:border-box}
+    <style>
+        /* PENGATURAN DASAR */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    color:#111;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f0ff;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        nav {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #e4d5ff;
+        }
+
+        nav a {
+            color: #7435bd;
+            text-decoration: none;
+            margin: 8px;
+            font-size: 13px;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* JUDUL */
+        h1 {
+            color: #7435bd;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #7435bd;
+            margin-bottom: 15px;
+        }
+
+        /* SECTION */
+        section {
+            margin-bottom: 35px;
+            scroll-margin-top: 15px;
+        }
+
+        /* KARTU */
+        .card {
+            background-color: white;
+            padding: 18px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: 0 3px 10px #00000010;
+        }
+
+        .card h3 {
+            color: #7435bd;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* KEAHLIAN */
+        .skill {
+            display: inline-block;
+            background-color: white;
+            color: #7435bd;
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            border: 1px solid #d7baff;
+        }
+
+        /* HOBI */
+        .hobby {
+            background-color: #e9dcff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #888;
+            font-size: 12px;
+        }
+        
+        .profile {
+    text-align: center;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
 }
 
-.container{
-    max-width:760px;
-    margin:auto;
-    padding:20px 36px 50px;
-    min-height:100vh;
-    background:linear-gradient(135deg,
-    rgba(255,255,255,.85),
-    rgba(215,218,221,.75));
+.profile img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #7435bd;
+    margin-bottom: 15px;
 }
 
-.logo{
-    text-align:center;
-    font-size:110px;
-    margin:10px 0 15px;
+.profile h2 {
+    margin-bottom: 8px;
 }
 
-.nav{
-    text-align:center;
-    border-bottom:1px solid #999;
-    padding-bottom:35px;
+.profile p {
+    color: #888;
 }
 
-.nav a{
-    color:#4b2384;
-    font-size:22px;
-    text-decoration:underline;
-}
-
-.nav span{font-size:22px}
-
-h1{
-    text-align:center;
-    font-size:48px;
-    font-weight:400;
-    line-height:1.35;
-    margin:55px 0 35px;
-}
-
-.tagline{
-    text-align:center;
-    font-size:23px;
-    font-style:italic;
-    line-height:1.6;
-}
-
-hr{
-    border:0;
-    border-top:1px solid #999;
-    margin:35px 0;
-}
-
-p{
-    font-size:24px;
-    line-height:1.65;
-}
-
-h2{
-    font-size:38px;
-    margin-top:35px;
-}
-
-ul{
-    font-size:23px;
-    line-height:1.7;
-}
-
-.footer{
-    text-align:center;
-    color:#777;
-    font-size:20px;
-    margin-top:55px;
-}
-</style>
+    </style>
 </head>
 
 <body>
 
-<div class="container">
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#biodata">Biodata</a>
+        <a href="#pendidikan">Pendidikan</a>
+        <a href="#organisasi">Organisasi</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#hobi">Hobi</a>
+    </nav>
 
-<div class="logo">🥐</div>
+    <div class="container">
 
-<div class="nav">
-    <a href="index.html">Beranda</a>
-    <span> | </span>
-    <a href="jadwal.html">Jadwal Operasional</a>
+        <!-- HOME -->
+        <section id="home">
+            
+            <div class="profile">
+    <img src="agis.jpg" alt="Foto Profil">
+
+    <h2>Agis Nur Virli</h2>
+    <p>Pelajar | XI TJKT 1</p>
 </div>
+        </section>
 
-<h1>
-    Selamat Datang di<br>
-    Sweet Crumbs
-</h1>
+        <!-- BIODATA -->
+        <section id="biodata">
+            <h2>Biodata Diri</h2>
 
-<div class="tagline">
-    "Camilan manis untuk menemani<br>
-    setiap momen spesial."
-</div>
+            <div class="card">
+                <h3>Agis Nur Virli</h3>
+                <p>
+                    Siswa SMK Negeri 1 Leuwimunding.
+                    Saya tertarik mempelajari teknologi,
+                    komputer, jaringan, dan pemrograman.
+                </p>
+            </div>
+        </section>
 
-<hr>
+        <!-- PENDIDIKAN -->
+        <section id="pendidikan">
+            <h2>Pendidikan</h2>
 
-<p>
-    Sweet Crumbs adalah toko pastry yang menyediakan berbagai
-    macam makanan manis dan gurih yang dibuat dengan bahan
-    pilihan. Kami hadir untuk menemani waktu santai bersama
-    keluarga maupun teman dengan <b>harga yang bersahabat</b>
-    dan rasa yang lezat.
-</p>
+            <div class="card">
+                <h3>SMKN 1 Leuwimunding</h3>
+                <p>2025 - Sekarang</p>
+                <p>Teknik Jaringan Komputer dan Telekomunikasi</p>
+            </div>
 
-<h2>Menu Favorit Kami</h2>
+            <div class="card">
+                <h3>SMPN 1 Gempol</h3>
+                <p>2022 - 2025</p>
+            </div>
 
-<ul>
-    <li>Pastry
-        <ul>
-            <li>Croissant Butter</li>
-            <li>Chocolate Danish</li>
-            <li>Cheese Puff</li>
-        </ul>
-    </li>
+            <div class="card">
+                <h3>SDN 2 Kempek</h3>
+                <p>2017 - 2022</p>
+            </div>
+        </section>
 
-    <li>Camilan
-        <ul>
-            <li>Brownies Cokelat</li>
-            <li>Cookies Choco Chip</li>
-        </ul>
-    </li>
-</ul>
+        <!-- ORGANISASI -->
+        <section id="organisasi">
+            <h2>Pengalaman Organisasi</h2>
 
-<div class="footer">
-    Created by Agis Nur Virli © 2026
-</div>
+            <div class="card">
+                <h3>Osis SMPN 1 GEMPOL</h3>
+                <p>2025 - 2025</p>
+                <p>
+                    Berpartisipasi dalam kegiatan dan
+                    program kerja bersama anggota.
+                </p>
+            </div>
+        </section>
 
-</div>
-<body background="j.jpeg"> 
+        <!-- KEAHLIAN -->
+        <section id="keahlian">
+            <h2>Keahlian</h2>
+            <p>Beberapa kemampuan yang saya pelajari:</p>
+
+            <span class="skill">Masak</span>
+            <span class="skill">Jaringan Komputer</span>
+        </section>
+
+        <!-- HOBI -->
+        <section id="hobi">
+            <h2>Hobi</h2>
+
+            <div class="hobby">
+                🎮 Bermain Game
+            </div>
+
+            <div class="hobby">
+                🏃 Berolahraga
+            </div>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        Terima kasih sudah berkunjung.
+        <br>
+        © 2026 | Agis Nur Virli
+    </footer>
+
+</body>
 </html>
